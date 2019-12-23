@@ -1,0 +1,9 @@
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\bin\Debug\pruebaswform.exe.config
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\bin\Debug\pruebaswform.exe
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\bin\Debug\pruebaswform.pdb
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.Form1.resources
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.Properties.Resources.resources
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.exe
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.pdb
