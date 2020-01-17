@@ -7,3 +7,4 @@ C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.c
 C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.exe
 C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.pdb
+C:\Users\Usuario\source\repos\pruebaswform\pruebaswform\obj\Debug\pruebaswform.csprojAssemblyReference.cache

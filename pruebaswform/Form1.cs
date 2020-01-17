@@ -19,6 +19,8 @@ namespace pruebaswform
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            ToolTip tp = new ToolTip();
+            tp.SetToolTip(BtnFactorial, "Funcion exclusiva para 1 numero solo");
 
         }
 
@@ -53,10 +55,6 @@ namespace pruebaswform
 
         private void BtnMultiplicar_Click(object sender, EventArgs e)
         {
-
-
-
-
             if (validar())
             {
                 int var1 = int.Parse(txtNum1.Text);
@@ -68,10 +66,6 @@ namespace pruebaswform
 
                 MessageBox.Show("Ingrese un numero válido");
             }
-
-
-
-
         }
 
         private void LblResultado_Click(object sender, EventArgs e)
@@ -89,7 +83,6 @@ namespace pruebaswform
             }
             else
             {
-
                 MessageBox.Show("Ingrese un numero válido");
             }
         }
@@ -137,6 +130,59 @@ namespace pruebaswform
                 valido = false;
             }
             return valido;
+        }
+
+        private void TxtNum1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btnporcentaje_Click(object sender, EventArgs e)
+        {
+            if (validar())
+            {
+                int var1 = int.Parse(txtNum1.Text);
+                int var2 = int.Parse(txtNum2.Text);
+                lblResultado.Text = (var1 * var2 / 100).ToString();
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un numero válido");
+            }
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Pen pen = new Pen(Color.FromArgb(255, 0, 0, 0));
+            e.Graphics.DrawLine(pen, 300, 0, 300, 282);
+        }
+        public int[] randomVector()
+        {
+            Random random = new Random();
+            int size = random.Next(0, 20);
+            int[] res = new int[size];
+            for (int x = 0; x< size; x++)
+            {
+                res[x] = random.Next(0, 50);
+            }
+            return res;
+        }
+
+        private void BtnVector_Click(object sender, EventArgs e)
+        {
+            int[] vec = randomVector();
+            int suma = 0;
+            for (int x=0; x<vec.Length; x++) {
+                Console.WriteLine(vec[x]);
+                suma = suma + vec[x];
+            }
+            Console.WriteLine("-------");
+            lblSuma.Text = suma.ToString();
+            lblCantidad.Text = vec.Length.ToString();
+        }
+        private void LblSuma_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

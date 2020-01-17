@@ -37,16 +37,19 @@
             this.BtnResta = new System.Windows.Forms.Button();
             this.BtnDividir = new System.Windows.Forms.Button();
             this.BtnFactorial = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.BtnLimpiar = new System.Windows.Forms.Button();
+            this.btnporcentaje = new System.Windows.Forms.Button();
+            this.btnVector = new System.Windows.Forms.Button();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lblSuma = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSumar
             // 
             this.btnSumar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSumar.Location = new System.Drawing.Point(12, 115);
+            this.btnSumar.Location = new System.Drawing.Point(12, 44);
             this.btnSumar.Name = "btnSumar";
-            this.btnSumar.Size = new System.Drawing.Size(97, 26);
+            this.btnSumar.Size = new System.Drawing.Size(124, 39);
             this.btnSumar.TabIndex = 3;
             this.btnSumar.Text = "+";
             this.btnSumar.UseVisualStyleBackColor = true;
@@ -54,25 +57,26 @@
             // 
             // txtNum1
             // 
-            this.txtNum1.Location = new System.Drawing.Point(23, 27);
+            this.txtNum1.Location = new System.Drawing.Point(327, 75);
             this.txtNum1.Name = "txtNum1";
             this.txtNum1.Size = new System.Drawing.Size(100, 20);
             this.txtNum1.TabIndex = 1;
+            this.txtNum1.TextChanged += new System.EventHandler(this.TxtNum1_TextChanged);
             this.txtNum1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtNum1_KeyDown);
             // 
             // txtNum2
             // 
-            this.txtNum2.Location = new System.Drawing.Point(155, 27);
+            this.txtNum2.Location = new System.Drawing.Point(327, 127);
             this.txtNum2.Name = "txtNum2";
             this.txtNum2.Size = new System.Drawing.Size(100, 20);
             this.txtNum2.TabIndex = 2;
             // 
             // lblResultado
             // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(354, 34);
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(322, 177);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(55, 13);
+            this.lblResultado.Size = new System.Drawing.Size(120, 30);
             this.lblResultado.TabIndex = 3;
             this.lblResultado.Text = "Resultado";
             this.lblResultado.Click += new System.EventHandler(this.LblResultado_Click);
@@ -80,9 +84,9 @@
             // BtnMultiplicar
             // 
             this.BtnMultiplicar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnMultiplicar.Location = new System.Drawing.Point(12, 159);
+            this.BtnMultiplicar.Location = new System.Drawing.Point(12, 108);
             this.BtnMultiplicar.Name = "BtnMultiplicar";
-            this.BtnMultiplicar.Size = new System.Drawing.Size(97, 30);
+            this.BtnMultiplicar.Size = new System.Drawing.Size(124, 39);
             this.BtnMultiplicar.TabIndex = 5;
             this.BtnMultiplicar.Text = "x";
             this.BtnMultiplicar.UseVisualStyleBackColor = true;
@@ -91,9 +95,9 @@
             // BtnResta
             // 
             this.BtnResta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnResta.Location = new System.Drawing.Point(134, 115);
+            this.BtnResta.Location = new System.Drawing.Point(162, 44);
             this.BtnResta.Name = "BtnResta";
-            this.BtnResta.Size = new System.Drawing.Size(96, 26);
+            this.BtnResta.Size = new System.Drawing.Size(124, 39);
             this.BtnResta.TabIndex = 4;
             this.BtnResta.Text = "-";
             this.BtnResta.UseVisualStyleBackColor = true;
@@ -102,9 +106,9 @@
             // BtnDividir
             // 
             this.BtnDividir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDividir.Location = new System.Drawing.Point(134, 160);
+            this.BtnDividir.Location = new System.Drawing.Point(162, 108);
             this.BtnDividir.Name = "BtnDividir";
-            this.BtnDividir.Size = new System.Drawing.Size(96, 29);
+            this.BtnDividir.Size = new System.Drawing.Size(124, 39);
             this.BtnDividir.TabIndex = 6;
             this.BtnDividir.Text = "/";
             this.BtnDividir.UseVisualStyleBackColor = true;
@@ -114,39 +118,74 @@
             // 
             this.BtnFactorial.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BtnFactorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnFactorial.Location = new System.Drawing.Point(315, 115);
+            this.BtnFactorial.Location = new System.Drawing.Point(152, 166);
             this.BtnFactorial.Name = "BtnFactorial";
-            this.BtnFactorial.Size = new System.Drawing.Size(83, 26);
+            this.BtnFactorial.Size = new System.Drawing.Size(97, 26);
             this.BtnFactorial.TabIndex = 7;
             this.BtnFactorial.Text = "!";
             this.BtnFactorial.UseVisualStyleBackColor = false;
             this.BtnFactorial.Click += new System.EventHandler(this.BtnFactorial_Click);
             // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(297, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 32);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Funcion exclusiva para 1 numero solo";
-            // 
             // BtnLimpiar
             // 
-            this.BtnLimpiar.Location = new System.Drawing.Point(315, 159);
+            this.BtnLimpiar.Location = new System.Drawing.Point(333, 23);
             this.BtnLimpiar.Name = "BtnLimpiar";
-            this.BtnLimpiar.Size = new System.Drawing.Size(83, 30);
+            this.BtnLimpiar.Size = new System.Drawing.Size(90, 26);
             this.BtnLimpiar.TabIndex = 9;
             this.BtnLimpiar.Text = "Limpiar";
             this.BtnLimpiar.UseVisualStyleBackColor = true;
             this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
             // 
+            // btnporcentaje
+            // 
+            this.btnporcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnporcentaje.Location = new System.Drawing.Point(49, 166);
+            this.btnporcentaje.Name = "btnporcentaje";
+            this.btnporcentaje.Size = new System.Drawing.Size(97, 26);
+            this.btnporcentaje.TabIndex = 10;
+            this.btnporcentaje.Text = "%";
+            this.btnporcentaje.UseVisualStyleBackColor = true;
+            this.btnporcentaje.Click += new System.EventHandler(this.Btnporcentaje_Click);
+            // 
+            // btnVector
+            // 
+            this.btnVector.Location = new System.Drawing.Point(49, 241);
+            this.btnVector.Name = "btnVector";
+            this.btnVector.Size = new System.Drawing.Size(124, 23);
+            this.btnVector.TabIndex = 11;
+            this.btnVector.Text = "Analisis de vector";
+            this.btnVector.UseVisualStyleBackColor = true;
+            this.btnVector.Click += new System.EventHandler(this.BtnVector_Click);
+            // 
+            // lblCantidad
+            // 
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Location = new System.Drawing.Point(212, 241);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(52, 13);
+            this.lblCantidad.TabIndex = 12;
+            this.lblCantidad.Text = "Cantidad:";
+            // 
+            // lblSuma
+            // 
+            this.lblSuma.AutoSize = true;
+            this.lblSuma.Location = new System.Drawing.Point(212, 260);
+            this.lblSuma.Name = "lblSuma";
+            this.lblSuma.Size = new System.Drawing.Size(37, 13);
+            this.lblSuma.TabIndex = 13;
+            this.lblSuma.Text = "Suma:";
+            this.lblSuma.Click += new System.EventHandler(this.LblSuma_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 230);
+            this.ClientSize = new System.Drawing.Size(447, 291);
+            this.Controls.Add(this.lblSuma);
+            this.Controls.Add(this.lblCantidad);
+            this.Controls.Add(this.btnVector);
+            this.Controls.Add(this.btnporcentaje);
             this.Controls.Add(this.BtnLimpiar);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnFactorial);
             this.Controls.Add(this.BtnDividir);
             this.Controls.Add(this.BtnResta);
@@ -160,6 +199,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,8 +215,11 @@
         private System.Windows.Forms.Button BtnResta;
         private System.Windows.Forms.Button BtnDividir;
         private System.Windows.Forms.Button BtnFactorial;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnLimpiar;
+        private System.Windows.Forms.Button btnporcentaje;
+        private System.Windows.Forms.Button btnVector;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Label lblSuma;
     }
 }
 
